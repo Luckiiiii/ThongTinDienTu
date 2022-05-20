@@ -1,0 +1,162 @@
+﻿* {
+    margin: 0;
+}
+
+/*header {
+    grid-area: header;
+}
+
+menu {
+    grid-area: menu;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header header header header header header header'
+        'main main main main main main main main main main main main'
+        'footer footer footer footer footer footer footer footer footer footer footer footer';
+    padding: 10px;
+    grid-column-gap: 30px;
+}*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c9d5df;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*MENU*/
+.main-menu-item {
+    position: relative;
+    padding: 10px 57px;
+}
+/*.main-menu-item:hover a{
+            background-color: #fff;
+            color: Highlight;
+        }*/
+.menu2-item {
+    list-style-type: none;
+    padding: 12px 12px;
+    background-color: Highlight;
+}
+
+.menu2 {
+    position: absolute;
+    width: 100%;
+    top: 39px;
+    left: 0;
+    height: 100%;
+    display: none;
+    padding-left: 0;
+    background-color: #fff;
+}
+
+.main-menu-item:hover .menu2 {
+    display: block;
+}
+
+.menu2-item-link {
+    text-decoration: none;
+    padding: 12px 24px;
+    color: #fff;
+    display: block;
+}
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+
+header {
+    /*display: block;
+    position: fixed;*/
+    /*top: 0;
+    left: 0;
+    width: 100%;*/
+    background-color: dodgerblue;
+    /*padding: 10px;*/
+}
+header > img {
+    width:100%;
+    margin: 0 0 0 0;
+}
+nav a:visited, nav a:link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-menu{
+   /* display:flex;*/
+   display:block;
+}
+nav > ul {
+    display: inline;
+}
+
+    nav > ul > li {
+        display: inline-block;
+        list-style: none;
+        padding: 10px;
+        margin: 0 5px 0 5px;
+    }
+    
+
+main {
+    display: block;
+    background-color: aliceblue;
+    /*padding-top: 3em;*/
+    padding-bottom: 3em;
+    min-height: 85%;
+}
+
+
+footer {
+    background-color: dodgerblue;
+}
+.footerd{
+    color:aliceblue;
+    background-color: Highlight;
+    height: 140px;
+    padding: 10px;
+}
+
+
+
+@media only screen and (max-width: 1350px) {
+  
+
+    .footerd{
+        font-size:10px;
+    }
+    .main-menu{
+        font-size:15px;
+        padding:0px;
+    }
+    .main-menu-item{
+        padding:10px;
+    }
+    nav>ul>li{
+        padding:0px;
+    }
+    body{
+        width:100%;
+    }
+    
+}
+.clear{
+    clear:both;
+}
+
+
